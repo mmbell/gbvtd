@@ -1,0 +1,12 @@
+FFLAGS  = -g
+FC = g77-3.4
+CC = gcc-3.4
+NCARG = /usr/local
+LIB = -L$(NCARG)/lib -I$(NCARG)/include \
+	-L/usr/lib/gcc/i386-redhat-linux/3.4.3\
+	-L/usr/X11R6/lib -I/usr/X11R6/include  -lncarg \
+	-lncarg_gks -lncarg_c -lXpm -lX11 -lXext -lg2c \
+
+OBJS = VD.o sqrt.o vdinclude.o 
+VD: $(OBJS)
+	$(FC) -v $(FFLAGS) $(OBJS) $(GLIB) $(LIB) -o $@ 

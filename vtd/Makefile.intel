@@ -1,0 +1,10 @@
+FFLAGS  = -O2 -Vaxlib -g
+FC = ifort
+NCARG = /export/poseidon1/mbell/ncarg-ifc
+LIB = -L$(NCARG)/lib -I$(NCARG)/include \
+	-L/usr/lib/gcc/i386-redhat-linux/3.4.3\
+	 -L/usr/X11R6/lib -I/usr/X11R6/include -lnsl -lncarg \
+	 -lncarg_gks -lncarg_c -lXpm -lX11 -lXext -i_dynamic -lg2c
+OBJS = VD.o sqrt.o vdinclude.o 
+VD: $(OBJS)
+	$(FC) -v $(FFLAGS) $(OBJS) $(GLIB) $(LIB) -o $@ -lnsl

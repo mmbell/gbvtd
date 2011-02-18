@@ -1,0 +1,6 @@
+FFLAGS  = -g
+FC = gfortran
+OBJS = findcenter.o sqrt.o vdinclude.o
+findcenter: $(OBJS)
+	$(FC) -v $(FFLAGS) $(OBJS) $(GLIB) $(LIB) -o $@
+

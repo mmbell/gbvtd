@@ -1,0 +1,8 @@
+FFLAGS  = -g -Vaxlib
+OBJS = read_dorade.o readcappinew.o
+CC= icc
+FC= ifort
+LIB = -L/usr/X11R6/lib -I/usr/X11R6/include -lnsl -lXpm -lX11 -lXext
+
+cappi: $(OBJS)
+	$(FC) -v $(FFLAGS) $(OBJS) $(GLIB) $(LIB) -o $@ -lnsl -i_dynamic

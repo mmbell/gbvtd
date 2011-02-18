@@ -1,0 +1,26 @@
+2                     !1:VDAD 2:GBVTD 3:VDAD and ideal 4:GBVTD and ideal
+1                     !1:interpolate, 2:analytic
+ZD                    !Reflectivity Field(A2)
+EV                    !Doppler Velocity Field(A2)
+1                     !bottom level to process
+10                    !top level to process
+4                     !number of gaps
+-1                    !gap #1
+-1                    !gap #2
+-1                   !gap #3
+180                   !gap #4
+5                     !first radius to process (i3)
+30                    !last radius to process (i3)
+1.0                   !width of the ring (on each side) to process (f8.2)
+0                     !print GBVTD coeff? 0:no, 1:yes
+1                     !1-MAX, 0-MIN
+4.                    !radius of influence
+0.05                   !converging criteria
+60                    !max. no. of iterations
+1
+/export/poseidon1/mbell/charley/cappi/kbyx//131402/131402.asi
+-110.0   30.0               GUESS (Enter initial guess here)
+  4.0     4.0                !increment in x and y coordinates
+ 12.0    12.0                !distance of the test box in x and y coord.
+/export/poseidon1/mbell/charley/cappi/kbyx/centers/131402cen.ind
+/export/poseidon1/mbell/charley/cappi/kbyx/centers/131402cen.sum

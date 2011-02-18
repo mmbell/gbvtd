@@ -1,0 +1,6 @@
+FFLAGS  = -g
+FC = g95
+OBJS = findcenter.o sqrt.o vdinclude.o
+findcenter: $(OBJS)
+	$(FC) -v $(FFLAGS) $(OBJS) $(GLIB) $(LIB) -i_dynamic -o $@ -lnsl
+

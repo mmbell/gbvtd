@@ -1,0 +1,28 @@
+2                     !1:VDAD 2:GBVTD 3:VDAD and ideal 4:GBVTD and ideal
+1                     !1:interpolate, 2:analytic
+DZ                    !Reflectivity Field(A2)
+VE                    !Doppler Velocity Field(A2)
+131402
+1                     !total number of volumes (tropical cyclone files)
+10                    !total number of levels to process
+4                     !number of gaps
+30                    !gap #1
+60                    !gap #2
+120                   !gap #3
+180                   !gap #4
+1                     !first ring to process (2I3)
+60                    !last ring to process (2I3)
+0                     !write GBVTD coeff, 0:no, 1:yes
+1.0
+/scr/poseidon1/mbell/charley/cappi/kbyx/131402/131402.asi
+/scr/science9/wlee/gbvtd/ideal/rankine.asy1r.inp
+  1 -107.55   37.11
+  2 -107.03   37.18
+  3 -107.03   37.18
+  4 -107.03   37.18
+  5 -107.03   37.18
+  6 -107.03   37.18
+  7 -107.03   37.18
+  8 -107.03   37.18
+  9 -107.03   37.18
+ 10 -107.03   37.18

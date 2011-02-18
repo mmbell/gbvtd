@@ -1,0 +1,8 @@
+FFLAGS  = -g -m32 
+OBJS = read_dorade.o readcappinew.o
+CC= gcc
+FC= gfortran
+LIB = -L/usr/X11R6/lib -I/usr/X11R6/include -lXpm -lX11 -lXext
+
+cappi: $(OBJS)
+	$(FC) -v $(FFLAGS) $(OBJS) $(GLIB) $(LIB) -o $@ 

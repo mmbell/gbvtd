@@ -1,0 +1,8 @@
+FFLAGS  = -g
+FC = gfortran
+CC = gcc
+#LIB = 	-L/usr/X11R6/lib -I/usr/X11R6/include -lXpm -lX11 -lXext 
+
+OBJS = VD.o sqrt.o vdinclude.o 
+VD: $(OBJS)
+	$(FC) -v $(FFLAGS) $(OBJS) $(GLIB) $(LIB) -o $@ 
